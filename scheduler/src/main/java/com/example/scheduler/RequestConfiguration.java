@@ -8,6 +8,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class RequestConfiguration {
     @Bean
     WebClient webClient() {
-        return WebClient.builder().baseUrl("http://localhost:3050/api/").build();
+        return WebClient.builder().baseUrl("http://localhost:3050/").build();
     }
 }

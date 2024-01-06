@@ -8,6 +8,7 @@ const app = express();
 
 kafkaConsume("locomotive", (data) => {
     const jsonData = JSON.parse(data)
+    console.log(data)
     mongoDbSave({
         _id: jsonData?.locoCode,
         locoName: jsonData?.locoName,

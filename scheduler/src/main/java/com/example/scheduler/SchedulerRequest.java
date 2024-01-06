@@ -29,7 +29,7 @@ public class SchedulerRequest {
         Random random = new Random();
 
         Locomotive locomotive = Locomotive.builder()
-                .locoCode(UUID.randomUUID().toString().substring(0, 13))
+                .locoCode(UUID.randomUUID().toString().substring(0, 8))
                 .locoName("Loco" + UUID.randomUUID().toString().substring(0, 4))
                 .locoDimension(random.nextInt(20) + 1 + " x " + (random.nextInt(20) + 1))
                 .status(status[random.nextInt(status.length)])
