@@ -31,7 +31,7 @@ public class SchedulerRequest {
         Locomotive locomotive = Locomotive.builder()
                 .locoCode(UUID.randomUUID().toString().substring(0, 13))
                 .locoName("Loco" + UUID.randomUUID().toString().substring(0, 4))
-                .locoDimension("10 x 10")
+                .locoDimension(random.nextInt(20) + 1 + " x " + (random.nextInt(20) + 1))
                 .status(status[random.nextInt(status.length)])
                 .time(LocalDateTime.now().toString())
                 .build();
