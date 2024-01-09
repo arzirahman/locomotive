@@ -11,7 +11,7 @@ import com.example.model.LocomotiveSummary;
 import com.example.service.SummaryService;
 
 @RestController
-@RequestMapping("/api/summary")
+@RequestMapping("/api")
 @CrossOrigin
 public class SummaryController {
 

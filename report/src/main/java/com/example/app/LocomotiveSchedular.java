@@ -44,8 +44,6 @@ public class LocomotiveSchedular {
                 log.info("Update Summary");
                 telegramBot.sendTextMessage("5767986311",
                                 String.format("""
-                                                <====> Locomtif Summary <====>
-
                                                 Total Locomotif = %d
                                                 Total Poor Locomotif = %d
                                                 Total Good Locomotif = %d
